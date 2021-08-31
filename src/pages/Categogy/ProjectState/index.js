@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function ProjectType() {
+export default function ProjectState() {
     return (
         <div>
-            <h1>Project Type</h1>
+            <h1>Prohect Statr</h1>
         </div>
     )
 }

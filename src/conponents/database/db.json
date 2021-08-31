@@ -1,0 +1,130 @@
+{
+    "projecttypes":[
+        {
+            "id": "Ma loai du an 1",
+            "name":"Ten loai du an 1",
+            "priovity": "Muc uu tien loai du an 1",
+            "decription": "Mo ta loai du an 1",
+            "status": "Trang thai loai du an 1"
+        },
+        {
+            "id": "Ma loai du an 2",
+            "name":"Ten loai du an 2",
+            "priovity": "Muc uu tien loai du an 2",
+            "decription": "Mo ta loai du an 2",
+            "status": "Trang thai loai du an 2"
+        }
+    ],
+    "techstacks":[
+        {
+            "id":"Ma cong nghe 1",
+            "name":"Ten cong nghe 1",
+            "priovity":"Muc uu tien cong nghe 1",
+            "status": "Trang thai cong nghe 1"
+        },
+        {
+            "id":"Ma cong nghe 2",
+            "name":"Ten cong nghe 2",
+            "priovity":"Muc uu tien cong nghe 2",
+            "status": "Trang thai cong nghe 2"
+        }
+    ],
+    "customers":[
+        {
+            "id":"Ma khach hang 1",
+            "name":"Ten khach hang 1",
+            "decription": "Mo ta khach hang 1",
+            "priovity": "Muc uu tien khach hang 1"
+        },
+        {
+            "id":"Ma khach hang 2",
+            "name":"Ten khach hang 2",
+            "decription": "Mo ta khach hang 2",
+            "priovity": "Muc uu tien khach hang 2"
+        }
+    ],
+    "projects":[
+        {
+            "id": "Ma du an 1",
+            "name":"Ten du an 1",
+            "type":"Ten loai du an 1",
+            "priovity": "Muc uu tien du an 1",
+            "status": "Trang thai du an 1",
+            "tech": "Ten cong nghe 1",
+            "center": "Trung tam 1",
+            "personel":[
+                {
+                    "name":"Ten nhan vien 1"
+                },
+                {
+                    "name": "Ten nhan vien 2"
+                }
+            ]
+        },
+        {
+            "id": "Ma du an 2",
+            "name":"Ten du an 2",
+            "type":"Ten loai du an 2",
+            "priovity": "Muc uu tien du an 2",
+            "status": "Trang thai du an 2",
+            "tech": "Ten cong nghe 2",
+            "center": "Trung tam 2",
+            "personel":[
+                {
+                    "name":"Ten nhan vien 3"
+                }
+            ]
+        }
+    ],
+    "centers":[
+        {
+            "id":"Ma trung tam 1",
+            "name":"Ten trung tam 1",
+            "decription":"Mo ta chung tam 1",
+            "tech":"Ten cong nghe 1",
+            "project":"Ten du an 1",
+            "personel": [
+                {
+                    "name":"Ten nhan vien 1"
+                },
+                {
+                    "name":"Ten nhan vien 2"
+                }
+            ]
+        },
+        {
+            "id":"Ma trung tam 2",
+            "name":"Ten trung tam 2",
+            "decription":"Mo ta chung tam 2",
+            "tech":"Ten cong nghe 2",
+            "project":"Ten du an 2",
+            "personel": [
+                {
+                    "name":"Ten nhan vien 3"
+                }
+            ]
+        }
+    ],
+    "personels":[
+        {
+            "id":"Ten nhan vien 1",
+            "date":"Ngay sinh 1",
+            "phone":"SDT 1",
+            "name": "Ten nhan vien 1",
+            "tech":"Ten cong nghe 1",
+            "decription":"Mo ta nhan vien 1",
+            "experience": "Kinh nghiem 1",
+            "project":"Ten du an 1"
+        },
+        {
+            "id":"Ten nhan vien 2",
+            "date":"Ngay sinh 2",
+            "phone":"SDT 2",
+            "name": "Ten nhan vien 2",
+            "tech":"Ten cong nghe 2",
+            "decription":"Mo ta nhan vien 2",
+            "experience": "Kinh nghiem 2",
+            "project":"Ten du an 2"
+        }
+    ]
+}
