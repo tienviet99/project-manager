@@ -2,6 +2,7 @@ import React from 'react';
 import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
 import Toolbar from '@material-ui/core/Toolbar';
+import { ListItemText } from '@material-ui/core';
 
 import {
   Link,
@@ -20,6 +21,7 @@ import {
 } from '../../routes/Routes';
 import './style.css'
 
+
 const {
   Header,
   Content,
@@ -33,17 +35,19 @@ const Home = () => {
         key={item.to}
         style={{listStyleType :'none'}}
       >
-      <ListItem >
+
         <Link 
           to={item.to} 
           style={{
             textDecoration:'none',
-            color:'White'
+            color:'White',
           }}
         >
-          {item.name}
+          <ListItem  >
+            <ListItemText primary={item.name} />
+          </ListItem>
         </Link>
-      </ListItem>
+
       </Menu.Item>
     ))
   );
@@ -62,7 +66,7 @@ const Home = () => {
   return (
     <Layout style={{width:'100vw',height:'100vh'}}>
       <Header>
-        <Toolbar style={{backgroundColor:'#3F51B5'}}>
+        <Toolbar style={{backgroundColor:'#3F51B5', borderBottom:'1px solid #ffffff'}}>
           <h2 style={{color:'white'}}>
             Phần mềm quản lý dự án
           </h2>
@@ -71,21 +75,21 @@ const Home = () => {
       <Layout style={{display:'flex', height:'100%'}}>
         <Sider style={{color:'white', background:'#3F51B5'}} >    
           <Menu style={{backgroundColor:'#3F51B5'}}>
-            <div >
+            <div className='catergories'>
               <h3>
                 Danh mục                
               </h3>
               {renderMenuItems(menuItemCategories)}
-            </div>
+            </div >
             <Divider style={{backgroundColor:'White'}}/>
-            <div>
+            <div className='catergories'>
               <h3>
                 Quản lí                
               </h3>
               {renderMenuItems(menuItemManager)}              
             </div>
             <Divider style={{backgroundColor:'White'}}/>
-            <div>
+            <div className='catergories'>
               <h3>
                 Báo cáo                
               </h3>

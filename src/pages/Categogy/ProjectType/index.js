@@ -1,13 +1,11 @@
 import React from 'react'
 
-import TableProjectManager from './table'
-import AddButton from 'conponents/Button/addbutton'
+import AddButton from './Button/addbutton'
+import ContentProjectManager from './table'
 
 export default function ProjectManager() {
+
     return (
-        <>
-            <AddButton/>
-            <TableProjectManager/>
-        </>
+        <ContentProjectManager />
     )
 }

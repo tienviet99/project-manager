@@ -1,4 +1,6 @@
 import React from 'react';
+import { useEffect, useState } from 'react'
+
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
@@ -14,31 +16,15 @@ import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 import LastPageIcon from '@material-ui/icons/LastPage';
 
-import EditButton from 'conponents/Button/editbutton';
-import DeleteButton from 'conponents/Button/deletebutton';
+import EditButton from '../Button/editbutton';
+import DeleteButton from '../Button/deletebutton';
+import AddButton from '../Button/addbutton';
 
 const useStyles = makeStyles({
   table: {
     minWidth: 650,
   },
 });
-
-function createData(id, name, decription, priority, status) {
-  return { id, name, decription, priority, status };
-}
-
-const rows = [
-    createData(1, 'Dự án 1', 'Dự án 1', 'Dự án 1', 'Dự án 1'),
-    createData(2, 'Dự án 2', 'Dự án 2', 'Dự án 2', 'Dự án 2'),
-    createData(3, 'Dự án 3', 'Dự án 3', 'Dự án 3', 'Dự án 3'),
-    createData(4, 'Dự án 4', 'Dự án 4', 'Dự án 4', 'Dự án 4'),
-    createData(5, 'Dự án 5', 'Dự án 5', 'Dự án 5', 'Dự án 5'),
-    createData(6, 'Dự án 6', 'Dự án 6', 'Dự án 6', 'Dự án 6'),
-    createData(7, 'Dự án 7', 'Dự án 7', 'Dự án 7', 'Dự án 7'),
-    createData(8, 'Dự án 8', 'Dự án 8', 'Dự án 8', 'Dự án 8'),
-    createData(9, 'Dự án 9', 'Dự án 9', 'Dự án 9', 'Dự án 9'),
-    createData(10, 'Dự án 10', 'Dự án 10', 'Dự án 10', 'Dự án 10'),
-];
 
 const useStyles1 = makeStyles((theme) => ({
   root: {
@@ -98,7 +84,22 @@ function TablePaginationActions(props) {
   );
 }
 
-export default function TableProjectManager() {
+export default function ContentProjectManager() {
+
+  const [rows, setRows] = useState([])
+  const url = 'http://localhost:8000/projecttypes'
+
+  useEffect(() => {
+    getData();
+  },[])
+  const getData = () => {
+    fetch(url)
+        .then((response) => response.json())
+        .then(function(e){
+            setRows(e);
+        })
+}
+
   const classes = useStyles();
   const [page, setPage] = React.useState(0);
   const [rowsPerPage, setRowsPerPage] = React.useState(5);
@@ -113,36 +114,38 @@ export default function TableProjectManager() {
     setRowsPerPage(parseInt(event.target.value, 10));
     setPage(0);
   };
-  
+
   return (
+    <>
+    <AddButton getData={getData} url={url}/>
     <TableContainer component={Paper} style={{margin: "1em 0em 0em 4em"}}>
       <Table className={classes.table} aria-label="simple table" style={{width:'1500px', margin: '1em 0em 0em 1em'}}>
         <TableHead>
           <TableRow>
-            <TableCell align="center">STT</TableCell>
-            <TableCell>Tên</TableCell>
-            <TableCell align="center">Mô tả</TableCell>
-            <TableCell align="center">Ưu tiên</TableCell>
-            <TableCell align="center">Trạng thái</TableCell>
-            <TableCell align="center" style={{width: "14em"}}>Thao tác</TableCell>
+            <TableCell align="center" style={{fontWeight:'700',fontSize:'medium'}}>STT</TableCell>
+            <TableCell align="center" style={{fontWeight:'700',fontSize:'medium'}}>Tên</TableCell>
+            <TableCell align="center" style={{fontWeight:'700',fontSize:'medium'}}>Mô tả</TableCell>
+            <TableCell align="center" style={{fontWeight:'700',fontSize:'medium'}}>Ưu tiên</TableCell>
+            <TableCell align="center" style={{fontWeight:'700',fontSize:'medium'}}>Trạng thái</TableCell>
+            <TableCell align="center" style={{width: "14em", fontWeight:'700',fontSize:'medium'}}>Thao tác</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
         {(rowsPerPage > 0
             ? rows.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
             : rows
-          ).map((row) => (
+          ).map((row,index) => (
             <TableRow key={row.id} >
-            <TableCell align="center" style={{padding:'8px'}}>{row.id}</TableCell>
-              <TableCell component="th" scope="row">
+            <TableCell align="center" style={{padding:'8px', width:"45px"}} >{index+1}</TableCell>
+              <TableCell component="th" scope="row" align="left" style={{padding:'8px'}}>
                 {row.name}
               </TableCell>
-              <TableCell align="center" style={{padding:'8px'}}>{row.decription}</TableCell>
-              <TableCell align="center" style={{padding:'8px'}}>{row.priority}</TableCell>
-              <TableCell align="center" style={{padding:'8px'}}>{row.status}</TableCell>
+              <TableCell align="left" style={{padding:'8px'}}>{row.decription}</TableCell>
+              <TableCell align="center" style={{padding:'8px',width:"100px"}}>{row.priority}</TableCell>
+              <TableCell align="center" style={{padding:'8px',width:"100px"}}>{row.status}</TableCell>
               <TableCell align="center" style={{padding:'8px'}} >
                   <EditButton/>
-                  <DeleteButton/>
+                  <DeleteButton id={row.id} getData={getData} url={url}/>
               </TableCell>
             </TableRow>
           ))}
@@ -173,5 +176,6 @@ export default function TableProjectManager() {
         </TableFooter>
       </Table>
     </TableContainer>
+    </>
   );
 }

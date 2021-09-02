@@ -1,3 +1,12 @@
-a:hover {
-  background: #2980b9;
+li:hover {
+  background: #ced6e0;
+}
+li:focus-visible{
+  background: #ced6e0;  
+}
+ul{
+  padding-inline-start: 0px;
+}
+.catergories{
+  padding-inline-start: 40px;
 }
