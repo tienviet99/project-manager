@@ -136,16 +136,20 @@ export default function ContentProjectManager() {
             : rows
           ).map((row,index) => (
             <TableRow key={row.id} >
-            <TableCell align="center" style={{padding:'8px', width:"45px"}} >{index+1}</TableCell>
-              <TableCell component="th" scope="row" align="left" style={{padding:'8px'}}>
+            <TableCell align="center" style={{padding:'8px', width:"45px"}} >{index+1+page*rowsPerPage}</TableCell>
+              <TableCell component="th" scope="row" align="left" style={{padding:'8px', width:'418px', height:'46px'}}>
                 {row.name}
               </TableCell>
-              <TableCell align="left" style={{padding:'8px'}}>{row.decription}</TableCell>
+              <TableCell align="left" style={{padding:'8px', width:'514px', maxHeight:'95px'}}>
+                <div style={{maxHeight:'60px', overflow:'auto'}}>
+                  {row.decription}
+                </div>
+              </TableCell>
               <TableCell align="center" style={{padding:'8px',width:"100px"}}>{row.priority}</TableCell>
               <TableCell align="center" style={{padding:'8px',width:"100px"}}>{row.status}</TableCell>
               <TableCell align="center" style={{padding:'8px'}} >
-                  <EditButton/>
-                  <DeleteButton id={row.id} getData={getData} url={url}/>
+                  <EditButton data={rows} id={row.id} getData={getData} url={url}/>
+                  <DeleteButton id={row.id} getData={getData} url={url} />
               </TableCell>
             </TableRow>
           ))}

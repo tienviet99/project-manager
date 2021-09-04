@@ -15,9 +15,6 @@
 .dx-button {
     margin: 0px 6px;
 }
-.textfeild-priority-status-decripton{
-    display: flex;
-}
 .textfeild-id-name{
     display: flex;
 }
@@ -34,5 +31,18 @@
     margin: 1em 1em 1em 1em;
 }
 .textfeild-decription{
-    margin: 1.45em 1em 1em 1em;
+    margin: 1em 1em 1em 1em;
+    width: 422px;
+}
+.textfeild-priority-status{
+    display: flex;
+}
+.title{
+    font-size: x-large;
+}
+.popupcontainer-add{
+    height: 400px;
+}
+.select-status{
+    width: 195px;
 }

@@ -3,6 +3,7 @@ import Button from '@material-ui/core/Button'
 import DeleteIcon from '@material-ui/icons/Delete';
 import Popup from 'reactjs-popup';
 import PopupDelete from 'conponents/popup/deletepopup';
+import { NotificationManager} from 'react-notifications';
 
 export default function DeleteButton({id, getData, url}) {
 
@@ -17,7 +18,7 @@ export default function DeleteButton({id, getData, url}) {
             res.json();
         })
         .then(function(){
-            getData()
+            getData();
         })
     }
 
@@ -38,8 +39,9 @@ return (
     {close => (
         <PopupDelete
             onOk={() => {
-                handleDeleteRow(id)
+                handleDeleteRow(id);
                 close();
+                NotificationManager.success('Dữ liệu đã được cập nhật', 'Thành Công');
             }}
             onCancel={() => {
                 console.log('popup closed ');

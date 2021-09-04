@@ -6,7 +6,8 @@ import TextField from '@material-ui/core/TextField';
 import InputLabel from '@material-ui/core/InputLabel';
 import Select from '@material-ui/core/Select';
 import { NotificationManager} from 'react-notifications';
-import './style.css'
+
+import '../addpopupform/style.css'
 
 const statuss = [
   {
@@ -19,23 +20,18 @@ const statuss = [
   }
 ];
 
-export default function PopupAddProjectType({
-  getData, 
-  url,
-  onCancel,
-  title = "Thêm dữ liệu ",
+export default function PopupEditProjectType({
+    rowData,
+    getData, 
+    url,
+    onCancel,
+    title = "Sửa dữ liệu ",
 }) {
-  const [rows, setRows] = useState({
-    name : '',
-    priority : '',
-    status : '',
-    decription : '',
-  })
-  const handleOnClickCreate = () => {
-      console.log(rows)
+  const [rows, setRows] = useState(rowData)
+  const handleOnClickEdit = () => { 
 
-      fetch(url, {
-        method: 'POST', 
+      fetch(url + "/" + rows.id, {
+        method: 'PUT', 
         headers: {
           'Content-Type': 'application/json',
         },
@@ -83,6 +79,7 @@ export default function PopupAddProjectType({
                   style={{ width: '422px'}}
                   required id="name" 
                   label="Tên loại dự án" 
+                  defaultValue={rows.name}
                   onChange={(e)=>{
                     rows.name = e.target.value;
                   }} 
@@ -92,7 +89,8 @@ export default function PopupAddProjectType({
               <div className='textfeild-priority'>
                 <TextField 
                   required id="priority" 
-                  label="Mức độ ưu tiên"  
+                  label="Mức độ ưu tiên"
+                  defaultValue={rows.priority}  
                   onChange={(e)=>{
                     rows.priority = e.target.value;
                   }}
@@ -103,7 +101,7 @@ export default function PopupAddProjectType({
                 <Select
                   className='select-status'
                   native
-                  value={rows.status}
+                  defaultValue={rows.status}
                   onChange={handleChange}
                   inputProps={{
                     name: 'status',
@@ -125,6 +123,7 @@ export default function PopupAddProjectType({
                 label="Mô tả"
                 multiline
                 rows={2}
+                defaultValue={rows.decription}
                 onChange={(e)=>{
                   rows.decription = e.target.value;
                 }}
@@ -138,9 +137,10 @@ export default function PopupAddProjectType({
             algin='center'
             style={{margin:'5px'}}
             accessKey={'enter'}
-            onClick={(e) => {
+            onClick={(e) => 
+            {
               if (!checkEmpty(rows)) {
-                handleOnClickCreate(e)
+                handleOnClickEdit(e)
                 onCancel(e)
                 NotificationManager.success('Dữ liệu đã được cập nhật', 'Thành Công');
               }
@@ -152,7 +152,7 @@ export default function PopupAddProjectType({
             }
           }
           >
-              Thêm
+              Lưu
           </Button>
           <Button
             variant="contained"

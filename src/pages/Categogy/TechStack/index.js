@@ -1,43 +1,35 @@
-import { Button } from '@material-ui/core';
 import React from 'react';
-import Popup from 'reactjs-popup';
-import PopupAddProjectType from '../ProjectType/popupform/addpopupform';
-import './style.css'
-
-export default () => (
-  <Popup
-    trigger={<Button variant="contained" color="primary" className="button"> Open Modal </Button>}
-    modal
-    nested
-  >
-    {close => (
-      <div className="modal">
-        <div className="actions">
-          <Popup
-            trigger={<Button variant="contained" color="primary" className="button"> Trigger </Button>}
-            position="top center"
-            nested
-          >
-                <PopupAddProjectType
-                    onCancel={() => {
-                        console.log('popup closed ');
-                        close();
-                      }}
-                />  
-          </Popup>
-          <Button
-          variant="contained"
-             color="primary"
-            className="button"
-            onClick={() => {
-              console.log('modal closed ');
-              close();
-            }}
-          >
-            close modal
-          </Button>
-        </div>
+import {NotificationContainer, NotificationManager} from 'react-notifications';
+import 'react-notifications/lib/notifications.css';
+ 
+export default function TechStack() {
+  const createNotification = (type) => {
+    return () => {
+      switch (type) {
+        case 'success':
+          NotificationManager.success('Dữ liệu đã được cập nhật', 'Thành Công');
+          break;
+        case 'error':
+          NotificationManager.error('Vui lòng nhập đủ thông tin', 'Thất Bại!', 5000, () => {
+            alert('callback');
+          });
+          break;
+      }
+    };
+  };
+ 
+    return (
+      <div>
+        <button className='btn btn-success'
+          onClick={(e) => {createNotification('success')}}>Success
+        </button>
+        <hr/>
+        <button className='btn btn-danger'
+          onClick={createNotification('error')}>Error
+        </button>
+ 
+        <NotificationContainer/>
       </div>
-    )}
-  </Popup>
-);
+    );
+}
+ 
