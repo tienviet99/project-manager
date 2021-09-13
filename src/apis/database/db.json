@@ -1,186 +1,503 @@
 {
   "projecttypes": [
     {
-      "status": "inactive",
-      "name": "111",
-      "priority": "111",
-      "decription": "Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22\n",
-      "id": "W969g6x"
-    },
-    {
-      "name": "123",
-      "priority": "123",
+      "name": "Giáo dục",
+      "priority": "6",
       "status": "active",
-      "decription": "Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22\n",
-      "id": "xrAoxKg"
+      "description": "Giáo dục",
+      "id": 1
     },
     {
-      "name": "124",
-      "priority": "124",
-      "status": "inactive",
-      "decription": "Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22\n",
-      "id": "riDH2O-"
-    },
-    {
-      "name": "123",
-      "priority": "123",
-      "status": "inactive",
-      "decription": "Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22\n",
-      "id": "TNjmOW1"
-    },
-    {
-      "name": "123",
-      "priority": "123",
+      "name": "Y tế",
+      "priority": "5",
       "status": "active",
-      "decription": "Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22\n",
-      "id": "aOAPbmM"
+      "description": "Y tế",
+      "id": 2
     },
     {
-      "name": "111",
-      "priority": "111",
-      "status": "active",
-      "decription": "Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22\n",
-      "id": "vIyRURc"
-    },
-    {
-      "name": "Test 1",
-      "priority": "1",
-      "status": "active",
-      "decription": "Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22\n",
-      "id": "HwYG5Qd"
-    },
-    {
-      "name": "Test 2",
-      "priority": "2",
-      "status": "active",
-      "decription": "Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22",
-      "id": "5CprTKt"
-    },
-    {
-      "name": "Test 3",
-      "priority": "3",
-      "status": "active",
-      "decription": "Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22\n",
-      "id": "MW3ufgH"
-    },
-    {
-      "name": "Tên 4",
+      "name": "Giao thông vận tải",
       "priority": "4",
       "status": "active",
-      "decription": "Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22Mô tả test 22\n",
-      "id": "iD6EYRn"
+      "description": "Giao thông vận tải",
+      "id": 3
+    },
+    {
+      "name": "Kinh tế - Đầu tư",
+      "priority": "3",
+      "status": "active",
+      "description": "Kinh tế - Đầu tư",
+      "id": 4
+    },
+    {
+      "name": "Tài Chính",
+      "priority": "2",
+      "status": "active",
+      "description": "Tài Chính",
+      "id": 5
+    },
+    {
+      "name": "Bảo Trì",
+      "priority": "1",
+      "status": "active",
+      "description": "Bảo Trì",
+      "id": 6
     }
   ],
   "techstacks": [
     {
       "id": "Ma cong nghe 1",
-      "name": "Ten cong nghe 1",
-      "priority": 1,
-      "status": "Trang thai cong nghe 1"
+      "name": "Java",
+      "description": "Một ngôn ngữ lập trình hướng đối tượng (OOP) cũ được phát hành vào năm 1995, ngăn xếp java được sử dụng trong nhiều ứng dụng và phát triển web vẫn còn phổ biến hiện nay.",
+      "status": "active"
     },
     {
       "id": "Ma cong nghe 2",
-      "name": "Ten cong nghe 2",
-      "priority": 2,
-      "status": "Trang thai cong nghe 2"
+      "name": ".NET ",
+      "description": "Được phát hành lần đầu tiên vào năm 2002 bởi Microsoft, lỗi kỹ thuật cụ thể này được sử dụng chủ yếu để tạo các ứng dụng cho hệ điều hành Windows.",
+      "status": "active"
+    },
+    {
+      "name": " ReactJS ",
+      "status": "active",
+      "description": "Đây là một công nghệ khá trẻ, ReactJS rất linh hoạt, nó có thể xây dựng một trang web và các ứng dụng dành cho thiết bị di động",
+      "id": "1Q6f4vR"
+    },
+    {
+      "name": "PHP",
+      "status": "active",
+      "description": "Chúng ta không thể xây dựng một trang web chức năng mà không có PHP, sau 25 năm kể từ ngày phát hành, PHP vẫn là ngôn ngữ lập trình phía máy chủ được sử dụng nhiều nhất",
+      "id": "Uuf_-Aj"
+    },
+    {
+      "name": "Android - Java",
+      "status": "active",
+      "description": "Là ngôn ngữ chính duy nhất để tạo ứng dụng Android vì họ muốn tận dụng sự phổ biến của Java.",
+      "id": "Jwxw6sm"
+    },
+    {
+      "name": "Node.js",
+      "status": "active",
+      "description": "Node.js là một nền tảng dựa trên JavaScript, nó có nhiều ứng dụng, từ phía máy chủ đến các ứng dụng di động, ... Hiện nay, nền tảng này được lựa chọn để vận hành máy chủ web hoặc nhiều công ty lớn như LinkedIn, Netflix, Medium, NASA, ...",
+      "id": "CrVzLd0"
+    },
+    {
+      "name": "iOS - Swift",
+      "status": "active",
+      "description": "Vừa được Apple phát hành vào năm 2014, Swift có rất nhiều lợi ích khi so sánh với Objective C - ngôn ngữ lập trình duy nhất để phát triển ứng dụng IOS. Với một lượng lớn điện thoại, Ipad và gần đây nhất là Macbook với chip M1 (có thể chạy các ứng dụng IOS bản địa), thị trường chắc chắn sẽ đòi hỏi nhiều nhà phát triển Swift hơn",
+      "id": "inPq8h6"
+    },
+    {
+      "name": "Android - Kotlin",
+      "status": "active",
+      "description": "Nó được phát hành vào năm 2011 và từ đó đến nay, nhà phát triển có thể sử dụng cả Java và Kotlin. Kotlin dễ học hơn và ít phức tạp hơn về cấu trúc và hoạt động, vì vậy, các coder trẻ thích học Kotlin hơn Java tại TP. Hồ Chí Minh.",
+      "id": "B8AdAuT"
     }
   ],
   "customers": [
     {
-      "id": "Ma khach hang 1",
-      "name": "Ten khach hang 1",
-      "decription": "Mo ta khach hang 1",
-      "priority": 1
+      "name": "Kỹ sư tại khu vực Đông Nam Á",
+      "priority": "5",
+      "status": "active",
+      "description": "Kỹ sư tại khu vực Đông Nam Á",
+      "id": 1
     },
     {
-      "id": "Ma khach hang 2",
-      "name": "Ten khach hang 2",
-      "decription": "Mo ta khach hang 2",
-      "priority": 2
+      "name": "Bệnh viện Chợ Rẫy",
+      "priority": "4",
+      "status": "active",
+      "description": "Bệnh viện Chợ Rẫy",
+      "id": 2
+    },
+    {
+      "name": "Bắc-Nam (Bến Lức- Long Thành)",
+      "priority": "3",
+      "status": "active",
+      "description": "Bắc-Nam (Bến Lức- Long Thành)",
+      "id": 3
+    },
+    {
+      "name": "CLB cổ phiếu Việt Nam",
+      "priority": "2",
+      "status": "active",
+      "description": "CLB cổ phiếu Việt Nam",
+      "id": 4
+    },
+    {
+      "name": "Trung tâm hỗ trợ tài chính",
+      "priority": "1",
+      "status": "active",
+      "description": "Trung tâm hỗ trợ tài chính",
+      "id": 5
+    }
+  ],
+  "state": [
+    {
+      "id": "1",
+      "name": "Active",
+      "description": "Activeee"
+    },
+    {
+      "id": "2",
+      "name": "Inactive",
+      "description": "Inactiveee"
+    },
+    {
+      "name": "Pending",
+      "priority": "",
+      "description": "Pendinggg\n",
+      "id": "XM2yad5"
+    },
+    {
+      "name": "Done ",
+      "priority": "",
+      "description": "Doneee",
+      "id": "XUE_PT7"
+    },
+    {
+      "name": "Approve",
+      "priority": "",
+      "description": "Approveee",
+      "id": "aRPbq3J"
+    },
+    {
+      "name": "Reject",
+      "priority": "",
+      "description": "rejecttt",
+      "id": "N4fF_RA"
     }
   ],
   "projects": [
     {
-      "id": "Ma du an 1",
-      "name": "Ten du an 1",
-      "type": "Ten loai du an 1",
-      "priority": 3,
-      "status": "Trang thai du an 1",
-      "tech": "Ten cong nghe 1",
-      "center": "Trung tam 1",
-      "personel": [
-        {
-          "name": "Ten nhan vien 1"
-        },
-        {
-          "name": "Ten nhan vien 2"
-        }
-      ]
+      "id": "21ec29cb-0130-44a1-8c3b-9d05a8b60283",
+      "name": "Phát triển mạng lưới đào tạo kỹ sư tại khu vực Đông Nam Á ",
+      "status": "Active",
+      "description": "Phát triển mạng lưới đào tạo kỹ sư tại khu vực Đông Nam Á ",
+      "tech": [
+        " ReactJS ",
+        "PHP"
+      ],
+      "staff": [
+        "Pham Tien Viet",
+        "Trình Hữu Hiếu"
+      ],
+      "center": [
+        "Trung tâm phát triển số 1"
+      ],
+      "type": "Giáo dục"
     },
     {
-      "id": "Ma du an 2",
-      "name": "Ten du an 2",
-      "type": "Ten loai du an 2",
-      "priority": 3,
-      "status": "Trang thai du an 2",
-      "tech": "Ten cong nghe 2",
-      "center": "Trung tam 2",
-      "personel": [
-        {
-          "name": "Ten nhan vien 3"
-        }
-      ]
+      "id": "501c0fff-6ed3-4e79-85c7-edbacc4aaa8e",
+      "name": "Phát triển mô hình phục hồi chức năng thông qua việc sử dụng hệ thống thông minh",
+      "status": "Active",
+      "description": "Phát triển mô hình phục hồi chức năng thông qua việc sử dụng hệ thống thông minh",
+      "tech": [
+        "Android - Java",
+        "Node.js"
+      ],
+      "staff": [
+        "Nguyễn Văn Khánh",
+        "Trịnh Xuân Tùng",
+        "Nguyễn Ngọc Minh"
+      ],
+      "center": [
+        "Trung tâm phát triển số 2",
+        "Trung tâm phát triển số 3"
+      ],
+      "type": "Y tế"
+    },
+    {
+      "id": "467d261b-0744-4193-85f0-634a8cce57e3",
+      "name": "Dự án hỗ trợ phát triển hệ thống thẻ vé liên thông cho vận tải công cộng Hà Nội",
+      "status": "Active",
+      "description": "Dự án hỗ trợ phát triển hệ thống thẻ vé liên thông cho vận tải công cộng Hà Nội",
+      "tech": [
+        "Node.js",
+        " ReactJS "
+      ],
+      "staff": [
+        "Trình Hữu Hiếu",
+        "Nguyễn Văn Khánh"
+      ],
+      "center": [
+        "Trung tâm phát triển số 4"
+      ],
+      "type": "Giao thông vận tải"
+    },
+    {
+      "id": "4e80c6a3-cc3f-4b1d-ad62-eba6f5b7a1ab",
+      "name": "Dự án tăng cường năng lực cho Ngân hàng Nhà nước Việt Nam trong lĩnh vực chính sách tiền tệ, phân tích và dự báo kinh tế",
+      "status": "Done ",
+      "description": "Dự án tăng cường năng lực cho Ngân hàng Nhà nước Việt Nam trong lĩnh vực chính sách tiền tệ, phân tích và dự báo kinh tế",
+      "tech": [
+        "Android - Java",
+        "Node.js"
+      ],
+      "staff": [
+        "Nguyễn Văn Khánh",
+        "Nguyễn Ngọc Minh"
+      ],
+      "center": [
+        "Trung tâm phát triển số 3",
+        "Trung tâm phát triển số 5"
+      ],
+      "type": "Kinh tế - Đầu tư"
     }
   ],
   "centers": [
     {
-      "id": "Ma trung tam 1",
-      "name": "Ten trung tam 1",
-      "decription": "Mo ta chung tam 1",
-      "tech": "Ten cong nghe 1",
-      "project": "Ten du an 1",
-      "personel": [
-        {
-          "name": "Ten nhan vien 1"
-        },
-        {
-          "name": "Ten nhan vien 2"
-        }
+      "id": "838b3d5c-c85d-4577-92cf-cb245c20e22e",
+      "name": "Trung tâm phát triển số 2",
+      "description": "Trung tâm phát triển số 2",
+      "tech": [
+        "PHP",
+        "Android - Java",
+        "Node.js"
+      ],
+      "project": [],
+      "staff": [
+        "Trịnh Xuân Tùng"
       ]
     },
     {
-      "id": "Ma trung tam 2",
-      "name": "Ten trung tam 2",
-      "decription": "Mo ta chung tam 2",
-      "tech": "Ten cong nghe 2",
-      "project": "Ten du an 2",
-      "personel": [
-        {
-          "name": "Ten nhan vien 3"
-        }
+      "id": "f269deb0-a76f-4e4f-be07-cc63966fc577",
+      "name": "Trung tâm phát triển số 3",
+      "description": "Trung tâm phát triển số 3",
+      "tech": [
+        "Android - Java"
+      ],
+      "project": [
+        "Dự án tăng cường năng lực cho Ngân hàng Nhà nước Việt Nam trong lĩnh vực chính sách tiền tệ, phân tích và dự báo kinh tế"
+      ],
+      "staff": [
+        "Nguyễn Ngọc Minh"
+      ]
+    },
+    {
+      "id": "0c628393-b137-4bd0-af17-0b08e2ac7c39",
+      "name": "Trung tâm phát triển số 5",
+      "description": "Trung tâm phát triển số 5",
+      "tech": [
+        "Java",
+        ".NET ",
+        " ReactJS ",
+        "PHP",
+        "Android - Java",
+        "Node.js",
+        "iOS - Swift",
+        "Android - Kotlin"
+      ],
+      "project": [
+        "Dự án tăng cường năng lực cho Ngân hàng Nhà nước Việt Nam trong lĩnh vực chính sách tiền tệ, phân tích và dự báo kinh tế"
+      ],
+      "staff": [
+        "Cung Minh Phong"
+      ]
+    },
+    {
+      "id": "f47c377e-df3c-4428-8890-3714f6680ba8",
+      "name": "Trung tâm phát triển số 4",
+      "description": "Trung tâm phát triển số 4",
+      "tech": [
+        "iOS - Swift",
+        "Android - Kotlin"
+      ],
+      "project": [
+        "Dự án hỗ trợ phát triển hệ thống thẻ vé liên thông cho vận tải công cộng Hà Nội"
+      ],
+      "staff": [
+        "Nguyễn Văn Khánh"
+      ]
+    },
+    {
+      "id": "97b9e56e-ae7e-479c-b7a0-fe3509c8f0e4",
+      "name": "Trung tâm phát triển số 1",
+      "description": "Trung tâm phát triển số 1",
+      "tech": [
+        "Java",
+        ".NET ",
+        " ReactJS ",
+        "PHP"
+      ],
+      "project": [
+        "Phát triển mạng lưới đào tạo kỹ sư tại khu vực Đông Nam Á "
+      ],
+      "staff": [
+        "Trình Hữu Hiếu"
+      ]
+    },
+    {
+      "id": "c09cb535-e979-4399-bfab-0aa93b996484",
+      "name": "Trung tâm phát triển số 6",
+      "description": "Trung tâm phát triển số 6",
+      "tech": [
+        "Node.js",
+        "iOS - Swift",
+        "Android - Kotlin"
+      ],
+      "project": [],
+      "staff": [
+        "Pham Tien Viet"
       ]
     }
   ],
-  "personels": [
+  "staffs": [
     {
-      "id": "Ten nhan vien 1",
-      "date": "Ngay sinh 1",
-      "phone": "SDT 1",
-      "name": "Ten nhan vien 1",
-      "tech": "Ten cong nghe 1",
-      "decription": "Mo ta nhan vien 1",
-      "experience": "Kinh nghiem 1",
-      "project": "Ten du an 1"
+      "id": "ae2012a8-8dad-4e6e-8199-f26b0275b477",
+      "name": "Cung Minh Phong",
+      "date": "1999-12-12",
+      "experience": "Intern",
+      "phone": "098671897",
+      "tech": [
+        {
+          "id": "599c6cf4-6860-48f2-841a-e609dd9f7caa",
+          "nameTech": "Java",
+          "time": "10 tháng",
+          "framework": " Frame work "
+        }
+      ],
+      "project": []
     },
     {
-      "id": "Ten nhan vien 2",
-      "date": "Ngay sinh 2",
-      "phone": "SDT 2",
-      "name": "Ten nhan vien 2",
-      "tech": "Ten cong nghe 2",
-      "decription": "Mo ta nhan vien 2",
-      "experience": "Kinh nghiem 2",
-      "project": "Ten du an 2"
+      "id": "a7ba415e-2192-4c77-9f1a-7b2873135cee",
+      "name": "Nguyễn Văn Khánh",
+      "date": "1999-08-10",
+      "experience": "Fresher",
+      "phone": "0355474355",
+      "tech": [
+        {
+          "id": "c8eff993-d09e-407a-a0b3-b65c3bf6c805",
+          "nameTech": "Java",
+          "time": "3 tháng",
+          "framework": "Frame Work Java"
+        },
+        {
+          "id": "a942f021-1c7c-4ba2-85be-b09441790585",
+          "nameTech": ".NET ",
+          "time": "3 tháng",
+          "framework": "Frame Work .NET"
+        },
+        {
+          "id": "e746979e-b203-44d8-89db-2ba54d895bd5",
+          "nameTech": "Android - Java",
+          "time": "3 tháng",
+          "framework": "Frame Work JAVA"
+        },
+        {
+          "id": "47016acc-2838-4571-b850-86bd2fc2dddb",
+          "nameTech": "Android - Kotlin",
+          "time": "3 tháng",
+          "framework": "Frame Work Andoird"
+        }
+      ],
+      "project": [
+        "Dự án hỗ trợ phát triển hệ thống thẻ vé liên thông cho vận tải công cộng Hà Nội",
+        "Dự án tăng cường năng lực cho Ngân hàng Nhà nước Việt Nam trong lĩnh vực chính sách tiền tệ, phân tích và dự báo kinh tế",
+        "Phát triển mô hình phục hồi chức năng thông qua việc sử dụng hệ thống thông minh"
+      ]
+    },
+    {
+      "id": "fb804567-8ec0-4799-8d92-dbbc29b48774",
+      "name": "Trịnh Xuân Tùng",
+      "date": "1999-02-17",
+      "experience": "Junior",
+      "phone": "03674588745",
+      "tech": [
+        {
+          "id": "c0773af8-2f21-426b-ae2d-5450bb48d582",
+          "nameTech": "Node.js",
+          "time": "4 tháng",
+          "framework": "Frame Work Node"
+        },
+        {
+          "id": "6665d7a2-65a3-425f-b4fa-d350f73d960c",
+          "nameTech": " ReactJS ",
+          "time": "4 tháng",
+          "framework": "Frame Work ReactJS"
+        }
+      ],
+      "project": [
+        "Phát triển mô hình phục hồi chức năng thông qua việc sử dụng hệ thống thông minh"
+      ]
+    },
+    {
+      "id": "00fbde63-597c-4e2a-8d5d-9fe2bc0e8e42",
+      "name": "Nguyễn Ngọc Minh",
+      "date": "1999-05-18",
+      "experience": "Senior",
+      "phone": "0876876712",
+      "tech": [
+        {
+          "id": "f3b64dba-246e-47d7-a723-de4051a58642",
+          "nameTech": "Node.js",
+          "time": "4 tháng",
+          "framework": "Frame Work"
+        },
+        {
+          "id": "1d0676ad-f132-486f-84ba-eed6851634b7",
+          "nameTech": " ReactJS ",
+          "time": "4 tháng",
+          "framework": "Frame Work"
+        },
+        {
+          "id": "66a52a26-325e-4d49-9ac5-f98c60050f14",
+          "nameTech": "Android - Java",
+          "time": "4 tháng",
+          "framework": "Frame Work"
+        },
+        {
+          "id": "d8262f7b-7de0-412e-ba5b-0440addeeeb8",
+          "nameTech": "Android - Kotlin",
+          "time": "4 tháng",
+          "framework": "Frame Work"
+        }
+      ],
+      "project": [
+        "Dự án tăng cường năng lực cho Ngân hàng Nhà nước Việt Nam trong lĩnh vực chính sách tiền tệ, phân tích và dự báo kinh tế",
+        "Phát triển mô hình phục hồi chức năng thông qua việc sử dụng hệ thống thông minh"
+      ]
+    },
+    {
+      "id": "f3dde792-7840-4c17-ba6f-46626abc5355",
+      "name": "Trình Hữu Hiếu",
+      "date": "1998-12-03",
+      "experience": "Senior",
+      "phone": "0954565312",
+      "tech": [
+        {
+          "id": "7e691842-6ed3-4fe7-bb72-55e44e381033",
+          "nameTech": "PHP",
+          "time": "5 tháng",
+          "framework": "Frame Work PHP"
+        }
+      ],
+      "project": [
+        "Dự án hỗ trợ phát triển hệ thống thẻ vé liên thông cho vận tải công cộng Hà Nội",
+        "Phát triển mạng lưới đào tạo kỹ sư tại khu vực Đông Nam Á "
+      ]
+    },
+    {
+      "id": "319e6364-20ff-4547-9f26-e676093896bb",
+      "name": "Pham Tien Viet",
+      "date": "1999-09-14",
+      "experience": "Intern",
+      "phone": "0981261036",
+      "tech": [
+        {
+          "id": "c2a68b90-cec7-4dad-9e1e-1067836f519b",
+          "nameTech": " ReactJS ",
+          "time": "3 tháng",
+          "framework": "Material-UI"
+        },
+        {
+          "id": "a6266a4b-2628-426f-9180-79f1c17a50a7",
+          "nameTech": "PHP",
+          "time": "2 tháng",
+          "framework": "Bootstrap 4"
+        }
+      ],
+      "project": [
+        "Phát triển mạng lưới đào tạo kỹ sư tại khu vực Đông Nam Á "
+      ]
     }
   ]
 }

@@ -6,7 +6,7 @@ import Popup from 'reactjs-popup';
 import PopupEditProjectType from '../../popupform/editpopupform';
 
 
-export default function EditButton({data, id, getData, url}) {
+export default function EditButton({data, id, getData, url,setPage}) {
     const [rowData, setRowData] = useState(data.find((row) => row.id === id));
     const handleEditButton = (e) =>{
         console.log(rowData)
@@ -28,6 +28,7 @@ export default function EditButton({data, id, getData, url}) {
             >
             {close => (
                 <PopupEditProjectType
+                    setPage={setPage}
                     rowData={rowData}
                     getData={getData} 
                     url={url}

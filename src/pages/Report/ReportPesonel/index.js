@@ -1,9 +1,15 @@
 import React from 'react'
 
-export default function ReportPersonel() {
+import ContentReportStaff from './table'
+
+import 'react-notifications/lib/notifications.css';
+
+export default function Center() {
+
     return (
-        <div>
-            <h1>Report Personnel</h1>
-        </div>
+        <>
+            <ContentReportStaff />
+    
+        </>
     )
 }

@@ -15,6 +15,7 @@ import FirstPageIcon from '@material-ui/icons/FirstPage';
 import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 import LastPageIcon from '@material-ui/icons/LastPage';
+import Typography from '@material-ui/core/Typography';
 
 import EditButton from '../Button/editbutton';
 import DeleteButton from '../Button/deletebutton';
@@ -96,7 +97,7 @@ export default function ContentProjectManager() {
     fetch(url)
         .then((response) => response.json())
         .then(function(e){
-            setRows(e);
+            setRows(e.reverse());
         })
 }
 
@@ -117,14 +118,17 @@ export default function ContentProjectManager() {
 
   return (
     <>
-    <AddButton getData={getData} url={url}/>
+    <AddButton getData={getData} url={url} setPage={setPage}/>
+    <Typography variant="h5" gutterBottom component="div" style={{marginLeft:'2em', fontWeight:'600'}}>
+          Loại dự án
+      </Typography>
     <TableContainer component={Paper} style={{margin: "1em 0em 0em 4em"}}>
-      <Table className={classes.table} aria-label="simple table" style={{width:'1500px', margin: '1em 0em 0em 1em'}}>
+      <Table className={classes.table} aria-label="simple table" style={{width:'1500px', margin: '1em -3em 0em 1em'}}>
         <TableHead>
           <TableRow>
             <TableCell align="center" style={{fontWeight:'700',fontSize:'medium'}}>STT</TableCell>
-            <TableCell align="center" style={{fontWeight:'700',fontSize:'medium'}}>Tên</TableCell>
-            <TableCell align="center" style={{fontWeight:'700',fontSize:'medium'}}>Mô tả</TableCell>
+            <TableCell align="left" style={{fontWeight:'700',fontSize:'medium'}}>Tên</TableCell>
+            <TableCell align="left" style={{fontWeight:'700',fontSize:'medium'}}>Mô tả</TableCell>
             <TableCell align="center" style={{fontWeight:'700',fontSize:'medium'}}>Ưu tiên</TableCell>
             <TableCell align="center" style={{fontWeight:'700',fontSize:'medium'}}>Trạng thái</TableCell>
             <TableCell align="center" style={{width: "14em", fontWeight:'700',fontSize:'medium'}}>Thao tác</TableCell>
@@ -142,14 +146,14 @@ export default function ContentProjectManager() {
               </TableCell>
               <TableCell align="left" style={{padding:'8px', width:'514px', maxHeight:'95px'}}>
                 <div style={{maxHeight:'60px', overflow:'auto'}}>
-                  {row.decription}
+                  {row.description}
                 </div>
               </TableCell>
               <TableCell align="center" style={{padding:'8px',width:"100px"}}>{row.priority}</TableCell>
               <TableCell align="center" style={{padding:'8px',width:"100px"}}>{row.status}</TableCell>
               <TableCell align="center" style={{padding:'8px'}} >
-                  <EditButton data={rows} id={row.id} getData={getData} url={url}/>
-                  <DeleteButton id={row.id} getData={getData} url={url} />
+                  <EditButton data={rows} id={row.id} getData={getData} url={url} setPage={setPage}/>
+                  <DeleteButton id={row.id} getData={getData} url={url} setPage={setPage}/>
               </TableCell>
             </TableRow>
           ))}

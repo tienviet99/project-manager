@@ -1,0 +1,45 @@
+.popuptemplate-title-add {
+    padding: 12px 0px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+.popupcontainer-add-state {
+    background-color: #f5f6fa;
+    height: 300px;
+}
+.popuptemplate-btn-control-add {
+    display: flex;
+    justify-content: center;
+}
+.dx-button {
+    margin: 0px 6px;
+}
+.textfeild-id-name{
+    display: flex;
+}
+.textfeild-id{
+    margin: 1em 1em 1em 1em;
+}
+.textfeild-name{
+    margin: 1em 1em 1em 1em;
+}
+.textfeild-priority{
+    margin: 1em 1em 1em 1em;
+}
+.textfeild-status{
+    margin: 1em 1em 1em 1em;
+}
+.textfeild-description{
+    margin: 1em 1em 1em 1em;
+    width: 422px;
+}
+.textfeild-priority-status{
+    display: flex;
+}
+.title{
+    font-size: x-large;
+}
+.select-status{
+    width: 195px;
+}

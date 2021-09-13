@@ -1,0 +1,268 @@
+import React from "react";
+import Button from '@material-ui/core/Button';
+import { useState } from "react";
+import { Container } from "@material-ui/core";
+import TextField from '@material-ui/core/TextField';
+import InputLabel from '@material-ui/core/InputLabel';
+import Select from '@material-ui/core/Select';
+import MenuItem from '@material-ui/core/MenuItem';
+import FormControl from '@material-ui/core/FormControl';
+import Chip from '@material-ui/core/Chip';
+import Input from '@material-ui/core/Input';
+import { NotificationManager} from 'react-notifications';
+import Dialog from '@material-ui/core/Dialog';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogTitle from '@material-ui/core/DialogTitle';
+import { v4 as uuidv4 } from 'uuid';
+
+import '../addpopupform/style.css'
+
+const ITEM_HEIGHT = 48;
+const ITEM_PADDING_TOP = 8;
+const MenuProps = {
+  PaperProps: {
+    style: {
+      maxHeight: ITEM_HEIGHT * 4.5 + ITEM_PADDING_TOP,
+      width: 250,
+    },
+  },
+};
+
+export default function PopupEditCenter({
+    techNameCenter,setTechNameCenter,
+    projectNameCenter,setProjectNameCenter,
+    staffNameCenter,setStaffNameCenter,
+    open,onClose,setPage,
+    projectName, staffName, techName,
+    getData,rowData, 
+    url,
+    title = "Sửa trung tâm, bộ phân, phòng ban ",
+}) {
+    const [rows, setRows] = useState(rowData);
+    
+    const handleOnClickEdit = () => {
+
+    fetch(url + '/' + rows.id, {
+        method: 'DELETE', 
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    })
+    .then(function(res){
+        res.json();
+    })
+    .then(function(){
+        getData();
+    })
+
+      rows.id=uuidv4();
+      rows.tech = techNameCenter
+      rows.project = projectNameCenter
+      rows.staff = staffNameCenter
+      console.log(rows)
+
+      fetch(url, {
+        method: 'POST',  
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(rows),
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log('Success:', data);
+      })
+      .then(function(){
+            getData();
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+    }
+
+
+  const handleChangeTech = (event) => {
+    setTechNameCenter(event.target.value);
+  };
+
+  const handleChangeProject = (event) => {
+    setProjectNameCenter(event.target.value);
+  };
+
+  const handleChangeStaff = (event) => {
+    setStaffNameCenter(event.target.value);
+  };
+
+  const onCancel = () => {
+        onClose() ;
+        setTechNameCenter([]);
+        setProjectNameCenter([]);
+        setStaffNameCenter([]);
+  }
+
+  const checkEmpty = (rows) => {
+    let errors = true;
+    if (rows.name.trim() && 
+        rows.description.trim()
+    ) errors = false ;  
+    return errors ;
+  }
+
+
+  return (
+    <>
+      <Dialog open={open} onClose={onClose} >
+        <div className='dialog'>
+        <DialogTitle className='title'>{title}</DialogTitle>
+        <DialogContent>
+            <form >
+                <div className='input'>
+                <TextField 
+                    className='textfeild-name-center'
+                    required id="name" 
+                    label="Tên trung tâm, bộ phân, phòng ban"
+                    defaultValue={rows.name}
+                    onChange={(e)=>{
+                    rows.name = e.target.value;
+                    }} 
+                />
+                </div>
+
+                <div className='input'>
+                <TextField
+                    className='textfeild-description-center'
+                    id="description"
+                    label="Mô tả"
+                    defaultValue={rows.description}
+                    multiline
+                    rows={2}
+                    onChange={(e)=>{
+                    rows.description = e.target.value;
+                    }}
+                />                 
+                </div>  
+                <div className="select">
+                <div className='input'>
+                <FormControl className='select'>
+                    <InputLabel>Tech Stack</InputLabel>
+                    <Select
+                        multiple
+                        value={techNameCenter}
+                        onChange={handleChangeTech}
+                        input={<Input/>}
+                        renderValue={(selected) => (
+                            <div>
+                            {selected.map((value) => (
+                                <Chip key={value} label={value}/>
+                            ))}
+                            </div>
+                        )}
+                        MenuProps={MenuProps}
+                        >
+                        {techName.map((name) => (
+                        <MenuItem key={name} value={name} >
+                            {name}
+                        </MenuItem>
+                        ))}
+                    </Select>
+                </FormControl>
+                </div>
+            
+                <div className='input'>
+                <FormControl className='select'>
+                    <InputLabel>Dự án</InputLabel>
+                    <Select
+                        multiple
+                        value={projectNameCenter}
+                        onChange={handleChangeProject}
+                        input={<Input/>}
+                        renderValue={(selected) => (
+                            <div>
+                            {selected.map((value) => (
+                                <Chip key={value} label={value}/>
+                            ))}
+                            </div>
+                        )}
+                        MenuProps={MenuProps}
+                        >
+                        {projectName.map((name) => (
+                        <MenuItem key={name} value={name} >
+                            {name}
+                        </MenuItem>
+                        ))}
+                    </Select>
+                </FormControl>                 
+                </div>
+               
+                <div className='input'>
+                <FormControl className='select'>
+                    <InputLabel>Nhân viên</InputLabel>
+                    <Select
+                        multiple
+                        value={staffNameCenter}
+                        onChange={handleChangeStaff}
+                        input={<Input/>}
+                        renderValue={(selected) => (
+                            <div>
+                            {selected.map((value) => (
+                                <Chip key={value} label={value}/>
+                            ))}
+                            </div>
+                        )}
+                        MenuProps={MenuProps}
+                        >
+                        {staffName.map((name) => (
+                        <MenuItem key={name} value={name} >
+                            {name}
+                        </MenuItem>
+                        ))}
+                    </Select>
+                </FormControl>                
+                </div>
+            </div>
+          </form>
+        </DialogContent>
+        <DialogActions>
+            <div className="popuptemplate-btn-control-add">
+            <Button
+                variant="contained"
+                color="secondary"
+                algin='center'
+                style={{margin:'5px'}}
+                accessKey={'enter'}
+                onClick={(e) => {
+                if (!checkEmpty(rows)) {
+                    handleOnClickEdit(e.target.id)
+                    onCancel()
+                    setPage(0)
+                    NotificationManager.success('Dữ liệu đã được cập nhật', 'Thành Công');
+                }
+                else {
+                    NotificationManager.warning('Vui lòng nhập đủ thông tin', 'Thất Bại!', 5000, () => {
+                    alert('callback');
+                    });
+                }
+                }
+            }
+            >
+                Thêm
+            </Button>
+            <Button
+                variant="contained"
+                color="secondary"
+                algin='center'
+                style={{margin:'5px'}}
+                accessKey={'esc'}
+                onClick={onCancel}
+            >
+                Huỷ
+            </Button>
+            </div>
+        </DialogActions>
+        </div> 
+      </Dialog>
+    </>
+  );
+}
+

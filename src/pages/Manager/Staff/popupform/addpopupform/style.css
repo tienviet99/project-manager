@@ -1,0 +1,60 @@
+
+.popuptemplate-btn-control-add {
+    display: flex;
+    justify-content: center;
+}
+.title{
+    font-size: x-large;
+}
+.popupcontainer-add{
+    height: 400px;
+}
+.select{
+    display: flex;
+    flex-direction: column;
+    width: 100%
+}
+.textfeild-name-center{
+    width: 100%
+}
+.textfeild-experience-center{
+    width: 100%
+}
+.textfeild-description-center{
+    width: 100%
+}
+.dialog{
+    min-width: 600px;
+    min-height: 330px;
+}
+.input{
+    margin: 10px;
+}
+.select{
+    width: 100%;
+}
+.textflied-date-phone{
+    display: flex
+}
+.textfeild-date-center{
+    width: 256px
+}
+.textfeild-phone-center{
+    width: 256px
+}
+.textfeild-time-tech{
+    width: 256px
+}
+.textfeild-framework{
+    width: 256px
+}
+.textflied-detail-tech{
+    display: flex
+}
+.input-tech{
+    display: flex;
+    align-items : flex-end
+}
+.select-tech{
+    width:436px
+}

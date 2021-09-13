@@ -4,7 +4,7 @@ import AddIcon from '@material-ui/icons/Add';
 import Popup from 'reactjs-popup';
 import PopupAddProjectType from 'pages/Categogy/ProjectType/popupform/addpopupform';
 
-export default function AddButton({getData, url}) {
+export default function AddButton({getData, url,setPage}) {
     return (
         <Popup trigger={
             <Button
@@ -21,6 +21,7 @@ export default function AddButton({getData, url}) {
             >
             {close => (
                 <PopupAddProjectType
+                    setPage={setPage}
                     getData={getData} 
                     url={url}
                     onCancel={() => {

@@ -3,12 +3,12 @@ import React from 'react'
 import {
     PATH_CENTER, 
     PATH_CUSTOMERS, 
-    PATH_PERSONEL, 
     PATH_PROJECT, 
     PATH_PROJECTSTATE, 
     PATH_PROJECTTYPE, 
-    PATH_REPORTPERSONEL, 
     PATH_REPORTPROJECT, 
+    PATH_REPORTSTAFF, 
+    PATH_STAFF, 
     PATH_TECHSTACK 
   } from './Path'
 import Customers from '../pages/Categogy/Customers'
@@ -16,10 +16,10 @@ import ProjectType from '../pages/Categogy/ProjectType'
 import ProjectState from '../pages/Categogy/ProjectState'
 import TechStack from '../pages/Categogy/TechStack'
 import Center from '../pages/Manager/Center'
-import Personel from '../pages/Manager/Personel'
+import Staff from '../pages/Manager/Staff'
 import Project from '../pages/Manager/Project'
 import ReportProject from '../pages/Report/ReportProject'
-import ReportPesonel from '../pages/Report/ReportPesonel'
+import ReportStaff from '../pages/Report/ReportPesonel'
 import {MenuItem} from '../types/route/MenuItem'
 import {RouteModel} from '../types/route/Route'
 
@@ -48,7 +48,7 @@ export const menuItemManager: MenuItem[] = [
   },
   {
     name: 'Nhân sự',
-    to : PATH_PERSONEL,
+    to : PATH_STAFF,
   },
   {
     name: 'Dự án',
@@ -62,7 +62,7 @@ export const menuItemReport: MenuItem[] = [
   },
   {
     name: 'Số lượng nhân sự',
-    to : PATH_REPORTPERSONEL,
+    to : PATH_REPORTSTAFF,
   },
 ];
 
@@ -94,8 +94,8 @@ export const appRoutes: RouteModel[] = [
   },
   {
     exact: true,
-    path: PATH_PERSONEL,
-    component: Personel,
+    path: PATH_STAFF,
+    component: Staff,
   },
   {
     exact: true,
@@ -109,7 +109,7 @@ export const appRoutes: RouteModel[] = [
   },
   {
     exact: true,
-    path: PATH_REPORTPERSONEL,
-    component: ReportPesonel,
+    path: PATH_REPORTSTAFF,
+    component: ReportStaff,
   },
 ];

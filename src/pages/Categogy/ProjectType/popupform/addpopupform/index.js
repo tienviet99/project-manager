@@ -11,25 +11,26 @@ import './style.css'
 const statuss = [
   {
     value: 'active',
-    label: 'Active',
+    label: 'active',
   },
   {
     value: 'inactive',
-    label: 'Inactive',
+    label: 'inactive',
   }
 ];
 
 export default function PopupAddProjectType({
+  setPage,
   getData, 
   url,
   onCancel,
-  title = "Thêm dữ liệu ",
+  title = "Thêm loại dự án ",
 }) {
   const [rows, setRows] = useState({
     name : '',
     priority : '',
     status : '',
-    decription : '',
+    description : '',
   })
   const handleOnClickCreate = () => {
       console.log(rows)
@@ -66,7 +67,7 @@ export default function PopupAddProjectType({
     if (rows.name.trim() && 
         rows.priority.trim() &&
         rows.status.trim() &&
-        rows.decription.trim()
+        rows.description.trim()
     ) errors = false ;  
     return errors ;
   }
@@ -118,15 +119,15 @@ export default function PopupAddProjectType({
                 </Select>
               </div>
             </div>
-            <div className='textfeild-decription'>
+            <div className='textfeild-description'>
             <TextField
                 style={{ width: '422px'}}
-                id="decription"
+                id="description"
                 label="Mô tả"
                 multiline
                 rows={2}
                 onChange={(e)=>{
-                  rows.decription = e.target.value;
+                  rows.description = e.target.value;
                 }}
             />          
             </div>            
@@ -140,8 +141,9 @@ export default function PopupAddProjectType({
             accessKey={'enter'}
             onClick={(e) => {
               if (!checkEmpty(rows)) {
-                handleOnClickCreate(e)
-                onCancel(e)
+                handleOnClickCreate(e);
+                onCancel(e);
+                setPage(0);
                 NotificationManager.success('Dữ liệu đã được cập nhật', 'Thành Công');
               }
               else {

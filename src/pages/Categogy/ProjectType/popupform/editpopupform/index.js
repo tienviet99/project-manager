@@ -12,20 +12,21 @@ import '../addpopupform/style.css'
 const statuss = [
   {
     value: 'active',
-    label: 'Active',
+    label: 'active',
   },
   {
     value: 'inactive',
-    label: 'Inactive',
+    label: 'inactive',
   }
 ];
 
 export default function PopupEditProjectType({
+    setPage,
     rowData,
     getData, 
     url,
     onCancel,
-    title = "Sửa dữ liệu ",
+    title = "Sửa loại dự án ",
 }) {
   const [rows, setRows] = useState(rowData)
   const handleOnClickEdit = () => { 
@@ -62,7 +63,7 @@ export default function PopupEditProjectType({
     if (rows.name.trim() && 
         rows.priority.trim() &&
         rows.status.trim() &&
-        rows.decription.trim()
+        rows.description.trim()
     ) errors = false ;  
     return errors ;
   }
@@ -78,7 +79,7 @@ export default function PopupEditProjectType({
               <TextField 
                   style={{ width: '422px'}}
                   required id="name" 
-                  label="Tên loại dự án" 
+                  label="Tên loại dựa án" 
                   defaultValue={rows.name}
                   onChange={(e)=>{
                     rows.name = e.target.value;
@@ -116,16 +117,16 @@ export default function PopupEditProjectType({
                 </Select>
               </div>
             </div>
-            <div className='textfeild-decription'>
+            <div className='textfeild-description'>
             <TextField
                 style={{ width: '422px'}}
-                id="decription"
+                id="description"
                 label="Mô tả"
                 multiline
                 rows={2}
-                defaultValue={rows.decription}
+                defaultValue={rows.description}
                 onChange={(e)=>{
-                  rows.decription = e.target.value;
+                  rows.description = e.target.value;
                 }}
             />          
             </div>            
@@ -140,8 +141,9 @@ export default function PopupEditProjectType({
             onClick={(e) => 
             {
               if (!checkEmpty(rows)) {
-                handleOnClickEdit(e)
-                onCancel(e)
+                handleOnClickEdit(e);
+                onCancel(e);
+                setPage(0);
                 NotificationManager.success('Dữ liệu đã được cập nhật', 'Thành Công');
               }
               else {

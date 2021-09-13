@@ -64,7 +64,7 @@ const Home = () => {
   );
 
   return (
-    <Layout style={{width:'100vw',height:'100vh'}}>
+    <Layout style={{width:'auto',height:'auto'}}>
       <Header>
         <Toolbar style={{backgroundColor:'#3F51B5', borderBottom:'1px solid #ffffff'}}>
           <h2 style={{color:'white'}}>
@@ -72,7 +72,7 @@ const Home = () => {
           </h2>
         </Toolbar>
       </Header>
-      <Layout style={{display:'flex', height:'100%'}}>
+      <Layout style={{display:'flex', height:'auto',minHeight:'100vh'}}>
         <Sider style={{color:'white', background:'#3F51B5'}} >    
           <Menu style={{backgroundColor:'#3F51B5'}}>
             <div className='catergories'>

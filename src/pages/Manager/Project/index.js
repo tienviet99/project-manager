@@ -1,9 +1,15 @@
 import React from 'react'
 
-export default function Project() {
+import ContentProject from './table'
+import {NotificationContainer} from 'react-notifications';
+import 'react-notifications/lib/notifications.css';
+
+export default function Center() {
+
     return (
-        <div>
-            <h1>Project</h1>
-        </div>
+        <>
+            <ContentProject />
+            <NotificationContainer/>
+        </>
     )
 }
