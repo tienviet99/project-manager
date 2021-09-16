@@ -93,6 +93,14 @@ export default function PopupEditProject({
 
 
   const onCancel = () => {
+    setRows({
+        id : '',
+        name : '',
+        description : '',
+        tech:[],
+        project:[],
+        staff:[]
+      })
         onClose() ;
         setCenterNameProject([]);
         setTechNameProject([]);

@@ -91,6 +91,14 @@ export default function PopupAddProject({
   const [typeNameProject, setTypeNameProject] = React.useState('');
 
   const onCancel = () => {
+    setRows({
+      id : '',
+      name : '',
+      description : '',
+      tech:[],
+      project:[],
+      staff:[]
+    })
         onClose() ;
         setCenterNameProject([]);
         setTechNameProject([]);

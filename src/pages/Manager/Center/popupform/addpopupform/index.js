@@ -84,6 +84,14 @@ export default function PopupAddCenter({
   };
 
   const onCancel = () => {
+        setRows({
+          id : '',
+          name : '',
+          description : '',
+          tech:[],
+          project:[],
+          staff:[]
+        })
         onClose() ;
         setTechNameCenter([]);
         setProjectNameCenter([]);

@@ -101,12 +101,12 @@ function Row(props) {
                           </Table>
                           </TableContainer>
                       </TableCell>
-                      <TableCell align="center" style={{padding:'8px',width:"100px"}}>
-                        <TableContainer  style={{width:'170px'}}>
+                      <TableCell align="center" style={{padding:'8px',width:"530px"}}>
+                        <TableContainer  style={{width:'530px'}}>
                           <Table aria-label="simple table">
                               <TableBody >
                               {row.project.map((rowProject) => (
-                                  <TableRow>
+                                  <TableRow >
                                     <TableCell align="right" style={{padding:'5px', textAlign:'center'}}><Chip key={rowProject} label={rowProject}/></TableCell>
                                   </TableRow>
                               ))}
@@ -292,11 +292,7 @@ export default function ContentCenter() {
             />
           ))}
 
-          {emptyRows > 0 && (
-            <TableRow style={{ height: 53 * emptyRows }}>
-              <TableCell colSpan={6} />
-            </TableRow>
-          )}
+
         </TableBody>
         <TableFooter>
           <TableRow >

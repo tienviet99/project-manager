@@ -135,6 +135,14 @@ export default function PopupAddStaff({
   };
 
   const onCancel = () => {
+    setRows({
+      id : '',
+      name : '',
+      description : '',
+      tech:[],
+      project:[],
+      staff:[]
+    })
         onClose() ;
         setExper('');
         setRows({

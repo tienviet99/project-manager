@@ -1,0 +1,17 @@
+.line-one{
+    display: flex;
+}
+.line-one-paper{
+    width: 750px;
+    height: 450px;
+    margin-left: 50px;
+}
+.line-two{
+    display: flex;
+}
+.line-two-paper{
+    width: 750px;
+    height: 450px;
+    margin-left: 50px;
+    margin-top: 50px
+}

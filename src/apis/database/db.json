@@ -83,7 +83,7 @@
     {
       "name": "iOS - Swift",
       "status": "active",
-      "description": "Vừa được Apple phát hành vào năm 2014, Swift có rất nhiều lợi ích khi so sánh với Objective C - ngôn ngữ lập trình duy nhất để phát triển ứng dụng IOS. Với một lượng lớn điện thoại, Ipad và gần đây nhất là Macbook với chip M1 (có thể chạy các ứng dụng IOS bản địa), thị trường chắc chắn sẽ đòi hỏi nhiều nhà phát triển Swift hơn",
+      "description": "Vừa được Apple phát hành vào năm 2014, Swift có rất nhiều lợi ích khi so sánh với Objective C - ngôn ngữ lập trình duy nhất để phát triển ứng dụng IOS. Với một lượng lớn điện thoại, Ipad và gần đây nhất là Macbook với chip M1 ",
       "id": "inPq8h6"
     },
     {
@@ -326,7 +326,7 @@
       ]
     },
     {
-      "id": "c09cb535-e979-4399-bfab-0aa93b996484",
+      "id": "b3cd998b-590b-4bdd-b882-c08788aaa499",
       "name": "Trung tâm phát triển số 6",
       "description": "Trung tâm phát triển số 6",
       "tech": [
@@ -334,7 +334,9 @@
         "iOS - Swift",
         "Android - Kotlin"
       ],
-      "project": [],
+      "project": [
+        "Phát triển mạng lưới đào tạo kỹ sư tại khu vực Đông Nam Á "
+      ],
       "staff": [
         "Pham Tien Viet"
       ]
@@ -342,122 +344,7 @@
   ],
   "staffs": [
     {
-      "id": "ae2012a8-8dad-4e6e-8199-f26b0275b477",
-      "name": "Cung Minh Phong",
-      "date": "1999-12-12",
-      "experience": "Intern",
-      "phone": "098671897",
-      "tech": [
-        {
-          "id": "599c6cf4-6860-48f2-841a-e609dd9f7caa",
-          "nameTech": "Java",
-          "time": "10 tháng",
-          "framework": " Frame work "
-        }
-      ],
-      "project": []
-    },
-    {
-      "id": "a7ba415e-2192-4c77-9f1a-7b2873135cee",
-      "name": "Nguyễn Văn Khánh",
-      "date": "1999-08-10",
-      "experience": "Fresher",
-      "phone": "0355474355",
-      "tech": [
-        {
-          "id": "c8eff993-d09e-407a-a0b3-b65c3bf6c805",
-          "nameTech": "Java",
-          "time": "3 tháng",
-          "framework": "Frame Work Java"
-        },
-        {
-          "id": "a942f021-1c7c-4ba2-85be-b09441790585",
-          "nameTech": ".NET ",
-          "time": "3 tháng",
-          "framework": "Frame Work .NET"
-        },
-        {
-          "id": "e746979e-b203-44d8-89db-2ba54d895bd5",
-          "nameTech": "Android - Java",
-          "time": "3 tháng",
-          "framework": "Frame Work JAVA"
-        },
-        {
-          "id": "47016acc-2838-4571-b850-86bd2fc2dddb",
-          "nameTech": "Android - Kotlin",
-          "time": "3 tháng",
-          "framework": "Frame Work Andoird"
-        }
-      ],
-      "project": [
-        "Dự án hỗ trợ phát triển hệ thống thẻ vé liên thông cho vận tải công cộng Hà Nội",
-        "Dự án tăng cường năng lực cho Ngân hàng Nhà nước Việt Nam trong lĩnh vực chính sách tiền tệ, phân tích và dự báo kinh tế",
-        "Phát triển mô hình phục hồi chức năng thông qua việc sử dụng hệ thống thông minh"
-      ]
-    },
-    {
-      "id": "fb804567-8ec0-4799-8d92-dbbc29b48774",
-      "name": "Trịnh Xuân Tùng",
-      "date": "1999-02-17",
-      "experience": "Junior",
-      "phone": "03674588745",
-      "tech": [
-        {
-          "id": "c0773af8-2f21-426b-ae2d-5450bb48d582",
-          "nameTech": "Node.js",
-          "time": "4 tháng",
-          "framework": "Frame Work Node"
-        },
-        {
-          "id": "6665d7a2-65a3-425f-b4fa-d350f73d960c",
-          "nameTech": " ReactJS ",
-          "time": "4 tháng",
-          "framework": "Frame Work ReactJS"
-        }
-      ],
-      "project": [
-        "Phát triển mô hình phục hồi chức năng thông qua việc sử dụng hệ thống thông minh"
-      ]
-    },
-    {
-      "id": "00fbde63-597c-4e2a-8d5d-9fe2bc0e8e42",
-      "name": "Nguyễn Ngọc Minh",
-      "date": "1999-05-18",
-      "experience": "Senior",
-      "phone": "0876876712",
-      "tech": [
-        {
-          "id": "f3b64dba-246e-47d7-a723-de4051a58642",
-          "nameTech": "Node.js",
-          "time": "4 tháng",
-          "framework": "Frame Work"
-        },
-        {
-          "id": "1d0676ad-f132-486f-84ba-eed6851634b7",
-          "nameTech": " ReactJS ",
-          "time": "4 tháng",
-          "framework": "Frame Work"
-        },
-        {
-          "id": "66a52a26-325e-4d49-9ac5-f98c60050f14",
-          "nameTech": "Android - Java",
-          "time": "4 tháng",
-          "framework": "Frame Work"
-        },
-        {
-          "id": "d8262f7b-7de0-412e-ba5b-0440addeeeb8",
-          "nameTech": "Android - Kotlin",
-          "time": "4 tháng",
-          "framework": "Frame Work"
-        }
-      ],
-      "project": [
-        "Dự án tăng cường năng lực cho Ngân hàng Nhà nước Việt Nam trong lĩnh vực chính sách tiền tệ, phân tích và dự báo kinh tế",
-        "Phát triển mô hình phục hồi chức năng thông qua việc sử dụng hệ thống thông minh"
-      ]
-    },
-    {
-      "id": "f3dde792-7840-4c17-ba6f-46626abc5355",
+      "id": "f1c19200-0d78-4cc1-b5ba-67427f6635fa",
       "name": "Trình Hữu Hiếu",
       "date": "1998-12-03",
       "experience": "Senior",
@@ -467,7 +354,7 @@
           "id": "7e691842-6ed3-4fe7-bb72-55e44e381033",
           "nameTech": "PHP",
           "time": "5 tháng",
-          "framework": "Frame Work PHP"
+          "framework": "Laravel"
         }
       ],
       "project": [
@@ -476,7 +363,68 @@
       ]
     },
     {
-      "id": "319e6364-20ff-4547-9f26-e676093896bb",
+      "id": "52dd7ef2-68e3-4066-871e-75b9a3e7e6a4",
+      "name": "Nguyễn Ngọc Minh",
+      "date": "1999-05-18",
+      "experience": "Senior",
+      "phone": "0876876712",
+      "tech": [
+        {
+          "id": "f3b64dba-246e-47d7-a723-de4051a58642",
+          "nameTech": "Node.js",
+          "time": "4 tháng",
+          "framework": "Express.js"
+        },
+        {
+          "id": "1d0676ad-f132-486f-84ba-eed6851634b7",
+          "nameTech": " ReactJS ",
+          "time": "4 tháng",
+          "framework": "React Toolbox"
+        },
+        {
+          "id": "66a52a26-325e-4d49-9ac5-f98c60050f14",
+          "nameTech": "Android - Java",
+          "time": "4 tháng",
+          "framework": "JSF – JavaServer Faces"
+        },
+        {
+          "id": "d8262f7b-7de0-412e-ba5b-0440addeeeb8",
+          "nameTech": "Android - Kotlin",
+          "time": "4 tháng",
+          "framework": "Kotlin"
+        }
+      ],
+      "project": [
+        "Dự án tăng cường năng lực cho Ngân hàng Nhà nước Việt Nam trong lĩnh vực chính sách tiền tệ, phân tích và dự báo kinh tế",
+        "Phát triển mô hình phục hồi chức năng thông qua việc sử dụng hệ thống thông minh"
+      ]
+    },
+    {
+      "id": "563b2060-b841-4cbd-8ee6-d535ff402c8a",
+      "name": "Trịnh Xuân Tùng",
+      "date": "1999-02-17",
+      "experience": "Junior",
+      "phone": "03674588745",
+      "tech": [
+        {
+          "id": "c0773af8-2f21-426b-ae2d-5450bb48d582",
+          "nameTech": "Node.js",
+          "time": "4 tháng",
+          "framework": "Mojito"
+        },
+        {
+          "id": "6665d7a2-65a3-425f-b4fa-d350f73d960c",
+          "nameTech": " ReactJS ",
+          "time": "4 tháng",
+          "framework": "Material-UI"
+        }
+      ],
+      "project": [
+        "Phát triển mô hình phục hồi chức năng thông qua việc sử dụng hệ thống thông minh"
+      ]
+    },
+    {
+      "id": "c0e039cc-0fa6-44ce-8a0f-04e66560064a",
       "name": "Pham Tien Viet",
       "date": "1999-09-14",
       "experience": "Intern",
@@ -492,12 +440,66 @@
           "id": "a6266a4b-2628-426f-9180-79f1c17a50a7",
           "nameTech": "PHP",
           "time": "2 tháng",
-          "framework": "Bootstrap 4"
+          "framework": "Laravel"
         }
       ],
       "project": [
         "Phát triển mạng lưới đào tạo kỹ sư tại khu vực Đông Nam Á "
       ]
+    },
+    {
+      "id": "d51b97cc-a84f-4922-8821-312d0746bfcd",
+      "name": "Nguyễn Văn Khánh",
+      "date": "1999-08-10",
+      "experience": "Fresher",
+      "phone": "0355474355",
+      "tech": [
+        {
+          "id": "c8eff993-d09e-407a-a0b3-b65c3bf6c805",
+          "nameTech": "Java",
+          "time": "3 tháng",
+          "framework": "JSF – JavaServer Faces"
+        },
+        {
+          "id": "a942f021-1c7c-4ba2-85be-b09441790585",
+          "nameTech": ".NET ",
+          "time": "3 tháng",
+          "framework": ".NET"
+        },
+        {
+          "id": "e746979e-b203-44d8-89db-2ba54d895bd5",
+          "nameTech": "Android - Java",
+          "time": "3 tháng",
+          "framework": "JSF – JavaServer Faces"
+        },
+        {
+          "id": "47016acc-2838-4571-b850-86bd2fc2dddb",
+          "nameTech": "Android - Kotlin",
+          "time": "3 tháng",
+          "framework": "Kotlin"
+        }
+      ],
+      "project": [
+        "Dự án hỗ trợ phát triển hệ thống thẻ vé liên thông cho vận tải công cộng Hà Nội",
+        "Dự án tăng cường năng lực cho Ngân hàng Nhà nước Việt Nam trong lĩnh vực chính sách tiền tệ, phân tích và dự báo kinh tế",
+        "Phát triển mô hình phục hồi chức năng thông qua việc sử dụng hệ thống thông minh"
+      ]
+    },
+    {
+      "id": "7e1c6fd4-9658-4adb-8256-48ae6a840ec1",
+      "name": "Cung Minh Phong",
+      "date": "1999-12-12",
+      "experience": "Intern",
+      "phone": "098671897",
+      "tech": [
+        {
+          "id": "599c6cf4-6860-48f2-841a-e609dd9f7caa",
+          "nameTech": "Java",
+          "time": "10 tháng",
+          "framework": "JSF – JavaServer Faces"
+        }
+      ],
+      "project": []
     }
   ]
 }

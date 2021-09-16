@@ -114,13 +114,13 @@ function Row(props) {
                           </Table>
                         </TableContainer>
                       </TableCell>
-                      <TableCell align="center" style={{padding:'8px',width:"100px"}}>
+                      <TableCell align="left" style={{padding:'8px',width:"100px"}}>
                         <TableContainer  style={{width:'170px'}}>
                           <Table aria-label="simple table" >
                               <TableBody >
                               {row.project.map((rowProject) => (
                                   <TableRow>
-                                    <TableCell align="center" style={{padding:'5px', textAlign:'center'}}><Chip key={rowProject} label={rowProject}/></TableCell>
+                                    <TableCell align="left" style={{padding:'5px', textAlign:'left'}}><Chip key={rowProject} label={rowProject}/></TableCell>
                                   </TableRow>
                               ))}
                               </TableBody>
@@ -279,11 +279,6 @@ export default function ContentStaff() {
             />
           ))}
 
-          {emptyRows > 0 && (
-            <TableRow style={{ height: 53 * emptyRows }}>
-              <TableCell colSpan={6} />
-            </TableRow>
-          )}
         </TableBody>
         <TableFooter>
           <TableRow >

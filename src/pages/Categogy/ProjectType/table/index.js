@@ -1,6 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react'
-
+import Chip from '@material-ui/core/Chip';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
@@ -150,18 +150,14 @@ export default function ContentProjectManager() {
                 </div>
               </TableCell>
               <TableCell align="center" style={{padding:'8px',width:"100px"}}>{row.priority}</TableCell>
-              <TableCell align="center" style={{padding:'8px',width:"100px"}}>{row.status}</TableCell>
+              <TableCell align="center" style={{padding:'8px',width:"100px"}}><Chip label={row.status}/></TableCell>
               <TableCell align="center" style={{padding:'8px'}} >
                   <EditButton data={rows} id={row.id} getData={getData} url={url} setPage={setPage}/>
                   <DeleteButton id={row.id} getData={getData} url={url} setPage={setPage}/>
               </TableCell>
             </TableRow>
           ))}
-          {emptyRows > 0 && (
-            <TableRow style={{ height: 53 * emptyRows }}>
-              <TableCell colSpan={6} />
-            </TableRow>
-          )}
+
         </TableBody>
         <TableFooter>
           <TableRow >

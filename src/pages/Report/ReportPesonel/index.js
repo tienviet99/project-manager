@@ -1,15 +1,11 @@
 import React from 'react'
 
-import ContentReportStaff from './table'
-
 import 'react-notifications/lib/notifications.css';
+import PieChar from './piechar';
 
 export default function Center() {
 
     return (
-        <>
-            <ContentReportStaff />
-    
-        </>
+        <PieChar />
     )
 }

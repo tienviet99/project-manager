@@ -24,7 +24,7 @@ export default function AddButton({getData, url, projectName, staffName, techNam
                 onClick={handleClickOpen}
                 style={{margin: "1em 0em 0em 101em"}}
             >
-                Lưu
+                Thêm
             </Button>
             <PopupAddCenter
                 setPage={setPage}
